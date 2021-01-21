@@ -15,8 +15,8 @@ module.exports = {
     
     let invite = new MessageEmbed()
     .setTitle(`Invite ${client.user.username}`)
-    .setDescription(`Want me in your server? Invite me today! \n\n [Invite Link](https://discord.com/api/oauth2/authorize?client_id=801527407664037888&permissions=1878523729&scope=bot)`)
-    .setURL(`https://discord.com/api/oauth2/authorize?client_id=801527407664037888&permissions=1878523729&scope=bot`)
+    .setDescription(`Want me in your server? Invite me today! \n\n [Invite Link](https://discord.com/api/oauth2/authorize?client_id=800113136447127584&permissions=1714945872&scope=bot)`)
+    .setURL(`https://discord.com/api/oauth2/authorize?client_id=800113136447127584&permissions=1714945872&scope=bot`)
     .setColor("BLUE")
     return message.channel.send(invite);
   },
