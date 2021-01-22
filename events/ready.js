@@ -1,6 +1,6 @@
 module.exports = async (client) => {
   console.log(`[API] Logged in as ${client.user.username}`);
-  await client.user.setActivity("Development By Jesand Andriand | Official Lucid Dream", {
+  await client.user.setActivity("The Little Heaven | The Perfect Place To Find Happiness", {
     type: "PLAYING",//can be LISTENING, WATCHING, PLAYING, STREAMING
   });
 };
