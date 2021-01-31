@@ -1,6 +1,18 @@
 const { MessageEmbed } = require("discord.js");
 
 module.exports = {
+
+	name: 'avatar',	description: 'Sends the avatar image of the user tagged.',
+
+	execute(message) {
+
+        message.channel.send(message.mentions.users.first().avatarURL)
+
+	},
+
+};
+
+module.exports = {
   info: {
     name: "invite",
     description: "To add/invite the bot to your server :*",
