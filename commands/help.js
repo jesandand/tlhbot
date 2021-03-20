@@ -3,7 +3,7 @@ const { MessageEmbed } = require('discord.js')
 module.exports = {
     info: {
         name: "help",
-        description: "To show all commands",
+        description: "Menampilkan seluruh commands bot",
         usage: "[command]",
         aliases: ["commands", "help me", "pls help"]
     },
