@@ -6,7 +6,7 @@ const fs = require('fs');
 module.exports = {
   info: {
     name: "afk",
-    description: "Bot StandBy 24/7 Di Voice",
+    description: "Stand by 24/7 di Voice",
     usage: "[afk]",
     aliases: ["24/7"],
   },
