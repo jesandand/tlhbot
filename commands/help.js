@@ -32,10 +32,10 @@ module.exports = {
             .setTitle("Command: "+command.info.name+" info , "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
             .setColor("YELLOW")
             .setDescription(`
-Nama: ${command.info.name}
-Deskripsi: ${command.info.description}
-Command: \`\`${client.config.prefix}${command.info.name} ${command.info.usage}\`\`
-Atau: ${command.info.aliases.join(", ")}
+Name: ${command.info.name}
+Description: ${command.info.description}
+Usage: \`\`${client.config.prefix}${command.info.name} ${command.info.usage}\`\`
+Aliases: ${command.info.aliases.join(", ")}
 `)
             message.channel.send(commandinfo)
         }
