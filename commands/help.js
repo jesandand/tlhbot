@@ -17,7 +17,7 @@ module.exports = {
         })
 
         let embed = new MessageEmbed()
-        .setAuthor("Commands of "+client.user.username, "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
+        .setAuthor("Commands bot "+client.user.username, "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
         .setColor("BLUE")
         .setDescription(allcmds)
         .setFooter(`Aftershine Entertainment ${client.config.prefix}help [command] | Development By Jesand`)
@@ -29,7 +29,7 @@ module.exports = {
             if(!command)command = client.commands.find(x => x.info.aliases.includes(cmd))
             if(!command)return message.channel.send("Unknown Command")
             let commandinfo = new MessageEmbed()
-            .setTitle("Command: "+command.info.name+" info")
+            .setTitle(":9_Style_Right:Command: "+command.info.name+" info")
             .setColor("YELLOW")
             .setDescription(`
 Name: ${command.info.name}
