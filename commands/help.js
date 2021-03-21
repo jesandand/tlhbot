@@ -29,7 +29,7 @@ module.exports = {
             if(!command)command = client.commands.find(x => x.info.aliases.includes(cmd))
             if(!command)return message.channel.send("Unknown Command")
             let commandinfo = new MessageEmbed()
-            .setTitle(":9_Style_Right:Command: "+command.info.name+" info")
+            .setTitle(":9_Style_Right: Command: "+command.info.name+" info")
             .setColor("YELLOW")
             .setDescription(`
 Name: ${command.info.name}
