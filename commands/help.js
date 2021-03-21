@@ -13,7 +13,7 @@ module.exports = {
 
         client.commands.forEach(cmd => {
             let cmdinfo = cmd.info
-            allcmds+="https://cdn.discordapp.com/attachments/822042698152280105/823033107049087026/Logo.png" • `"+client.config.prefix+cmdinfo.name+" "+cmdinfo.usage+"` ~ "+cmdinfo.description+"\n\n"
+            allcmds+=""https://cdn.discordapp.com/attachments/822042698152280105/823033107049087026/Logo.png" • `"+client.config.prefix+cmdinfo.name+" "+cmdinfo.usage+"` ~ "+cmdinfo.description+"\n\n"
         })
 
         let embed = new MessageEmbed()
