@@ -13,7 +13,7 @@ module.exports = {
 
         client.commands.forEach(cmd => {
             let cmdinfo = cmd.info
-            allcmds+="`"+client.config.prefix+cmdinfo.name+" "+cmdinfo.usage+"` ~ "+cmdinfo.description+"\n"
+            allcmds+="https://cdn.discordapp.com/attachments/822042698152280105/823033107049087026/Logo.png" • `"+client.config.prefix+cmdinfo.name+" "+cmdinfo.usage+"` ~ "+cmdinfo.description+"\n\n"
         })
 
         let embed = new MessageEmbed()
@@ -29,13 +29,13 @@ module.exports = {
             if(!command)command = client.commands.find(x => x.info.aliases.includes(cmd))
             if(!command)return message.channel.send("Unknown Command")
             let commandinfo = new MessageEmbed()
-            .setTitle(":9_Style_Right: Command: "+command.info.name+" info")
+            .setTitle("Command: "+command.info.name+" info , "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
             .setColor("YELLOW")
             .setDescription(`
-Name: ${command.info.name}
-Description: ${command.info.description}
-Usage: \`\`${client.config.prefix}${command.info.name} ${command.info.usage}\`\`
-Aliases: ${command.info.aliases.join(", ")}
+Nama: ${command.info.name}
+Deskripsi: ${command.info.description}
+Command: \`\`${client.config.prefix}${command.info.name} ${command.info.usage}\`\`
+Atau: ${command.info.aliases.join(", ")}
 `)
             message.channel.send(commandinfo)
         }
