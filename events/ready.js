@@ -4,9 +4,9 @@ module.exports = async (client) => {
     let statuses = [
         `as.help | Aftershine Entertainment`,
         `as.help | Invite Me To Server`,
-        `as.help | In ${client.guilds.cache.size} Server`,
+        `as.help | Stay In ${client.guilds.cache.size} Server`,
         `as.help | Develop By Jesand#1987`,
-        `as.help | Discord.io/Aftershines`
+        `as.help | Discord.gg/aftershine`
     ];
 
     setInterval(function() {
