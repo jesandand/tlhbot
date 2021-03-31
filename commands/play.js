@@ -138,7 +138,7 @@ stream.on('error', function(er)  {
 
       dispatcher.setVolumeLogarithmic(queue.volume / 100);
       let thing = new MessageEmbed()
-      .setAuthor("Started Playing Music!", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
+      .setAuthor("Started Playing Music!", "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
       .setThumbnail(song.img)
       .setColor("BLUE")
       .addField("Name", song.title, true)
