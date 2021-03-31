@@ -13,5 +13,5 @@ module.exports = async (client) => {
 
         let status = statuses[Math.floor(Math.random() * statuses.length)]
         client.user.setPresence({ activity: { name: status, type: "STREAMING"}, status: 'online'});
-    }, 5000);
+    }, 3000);
 };
