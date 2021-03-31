@@ -3,9 +3,9 @@ module.exports = async (client) => {
 
     let statuses = [
         `as.help | Aftershine Entertainment`,
-        `as.help | Punten`,
-        `as.help | Paket`,
-        `as.help | Develop By Jessxyz`,
+        `as.help | Invite Me To Server`,
+        `as.help | In ${client.guilds.cache.size} Server`,
+        `as.help | Develop By Jesand#1987`,
         `as.help | Discord.io/Aftershines`
     ];
 
