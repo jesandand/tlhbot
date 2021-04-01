@@ -21,7 +21,7 @@ module.exports = {
         .setColor("BLUE")
         .setDescription(allcmds)
         .addField(" <a:9_Style_Discord:789405103303950366>  •  Informasi" , "```\nhelp, invite, ping```")
-        .addField(" <a:9_Style_Work:789405098882105345>  •  General" ' "```say, sayembed```")
+        .addField(" <a:9_Style_Work:789405098882105345>  •  General" , "```say, sayembed```")
         .addField(" <a:as:827256384541687859>  •  Music Commands" , "```\nafk, play, pause, resume, volume, loop, \nlyrics, nowplaying, playlist , queue, stop, \nremove, search, shuffle, skip, skipto```")
         .setImage("https://cdn.discordapp.com/attachments/822042698152280105/823022484630405190/aftershine.jpg")
         .setFooter(`Aftershine Entertainment ${client.config.prefix}help | Development By Jesand`)
