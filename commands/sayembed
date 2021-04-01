@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js")
+const { MessageEmbed } = require('discord.js')
 
 module.exports = {
   info: {
@@ -8,7 +8,7 @@ module.exports = {
     aliases: ["se"],
   },
 
-exports.run = async (client, message, args) => {
+run: async function (client, message, args) {
   let sayembed = args.slice(0).join(' ')
   if (!sayembed) {
     const non = new MessageEmbed()
