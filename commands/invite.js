@@ -26,8 +26,8 @@ module.exports = {
     var permissions = 37080128;
     
     let invite = new MessageEmbed()
-    .setTitle(`Invite ${client.user.username}`)
-    .setDescription(`Want me in your server? Invite me today! \n\n [Invite Link](https://discord.com/api/oauth2/authorize?client_id=788117077118418974&permissions=1865940817&scope=bot)`)
+    .setTitle(`${client.user.username}`)
+    .setDescription(`Invite Bot After's Entertainment & Join Server Aftershine \n\n [Invite Link](https://discord.com/api/oauth2/authorize?client_id=788117077118418974&permissions=1865940817&scope=bot) \n\n [Join Server](https://discord.gg/JmFPKuSNUx)`)
     .setURL(`https://discord.com/api/oauth2/authorize?client_id=788117077118418974&permissions=1865940817&scope=bot`)
     .setColor("BLUE")
     return message.channel.send(invite);
