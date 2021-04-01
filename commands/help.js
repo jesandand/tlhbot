@@ -13,7 +13,7 @@ module.exports = {
 
         client.commands.forEach(cmd => {
             let cmdinfo = cmd.info
-            allcmds+="› `"+client.config.prefix+cmdinfo.name+" "+cmdinfo.usage+"` \n\n"
+            allcmds+="\n › "+client.config.prefix+cmdinfo.name+" "+cmdinfo.usage+" \n\n"
         })
 
         let embed = new MessageEmbed()
