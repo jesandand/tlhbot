@@ -9,12 +9,7 @@ module.exports = {
     },
 
     run: async function(client, message, args){
-        var allcmds = "";
-
-        client.commands.forEach(cmd => {
-            let cmdinfo = cmd.info
-            allcmds+="<a:9_Style_Loading:789405131686674463> › "+client.config.prefix+cmdinfo.name+" "+cmdinfo.usage+" \n\n"
-        })
+      
 
         let embed = new MessageEmbed()
         .setAuthor("Commands bot "+client.user.username, "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
