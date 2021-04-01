@@ -30,6 +30,7 @@ module.exports = {
             if(!command)return message.channel.send("Unknown Command")
             let commandinfo = new MessageEmbed()
             .setTitle("Command: "+command.info.name+" info")
+            .setImage("https://cdn.discordapp.com/attachments/822042698152280105/823022484630405190/aftershine.jpg")
             .setColor("YELLOW")
             .setDescription(`
 Name: ${command.info.name}
