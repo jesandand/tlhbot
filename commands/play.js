@@ -104,7 +104,7 @@ module.exports = {
     var online = afk[message.guild.id]
     if (!song){
       if (!online.afk) {
-        sendError("Aktifkan AFK agar Bot stand by 24/7 , ketik `as.afk`\n\nThanks you", message.channel)
+        sendError("Aktifkan AFK agar bot music stand by 24/7 , ketik `as.afk`\n\nThanks you", message.channel)
         message.guild.me.voice.channel.leave();//If you want your bot stay in vc 24/7 remove this line :D
         message.client.queue.delete(message.guild.id);
       }
