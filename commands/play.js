@@ -73,12 +73,12 @@ module.exports = {
     if (serverQueue) {
       serverQueue.songs.push(song);
       let thing = new MessageEmbed()
-      .setAuthor("Music Berhasil Di Putar", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
+      .setAuthor("Music Berhasil Ditambahkan ke Daftar Putar", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
       .setThumbnail(song.img)
       .setColor("YELLOW")
-      .addField("Name", song.title, true)
-      .addField("Duration", song.duration, true)
-      .addField("Requested by", song.req.tag, true)
+      .addField("Nama", song.title, true)
+      .addField("Durasi", song.duration, true)
+      .addField("Request dari", song.req.tag, true)
       .setFooter(`Views: ${song.views} | ${song.ago}`)
       return message.channel.send(thing);
     }
@@ -104,7 +104,7 @@ module.exports = {
     var online = afk[message.guild.id]
     if (!song){
       if (!online.afk) {
-        sendError("Leaving the voice channel because I think there are no songs in the queue. If you like the bot stay 24/7 in voice channel run `!afk`\n\nThanks you", message.channel)
+        sendError("Aktifkan AFK agar Bot stand by 24/7 , ketik `as.afk`\n\nThanks you", message.channel)
         message.guild.me.voice.channel.leave();//If you want your bot stay in vc 24/7 remove this line :D
         message.client.queue.delete(message.guild.id);
       }
@@ -138,12 +138,12 @@ stream.on('error', function(er)  {
 
       dispatcher.setVolumeLogarithmic(queue.volume / 100);
       let thing = new MessageEmbed()
-      .setAuthor("Started Playing Music!", "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
+      .setAuthor("Memutar Lagu", "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
       .setThumbnail(song.img)
       .setColor("BLUE")
-      .addField("Name", song.title, true)
-      .addField("Duration", song.duration, true)
-      .addField("Requested by", song.req.tag, true)
+      .addField("Nama", song.title, true)
+      .addField("Durasi", song.duration, true)
+      .addField("Request dari", song.req.tag, true)
       .setFooter(`Views: ${song.views} | ${song.ago}`)
       queue.textChannel.send(thing);
     };
