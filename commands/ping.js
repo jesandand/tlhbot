@@ -1,12 +1,20 @@
 const Discord = require('discord.js')
 const { MessageEmbed } = require('discord.js')
 
-exports.run = async (client, message, args) => {
+module.exports = {
+  info: {
+    name: "ping",
+    description: "Cek Ping",
+    usage: "ping",
+    aliases: ["ping"],
+  },
+
+run: async function (client, message, args) {
     
 message.channel.send('**The Ping-inator!**\nPinging...').then((msg) => {
  ping = msg.createdTimestamp - message.createdTimestamp;
  const embed = new Discord.MessageEmbed()
-  .setAuthor('The Little Heaven', client.user.displayAvatarURL({ dynamic: true }))
+  .setAuthor('After's Entertainment', client.user.displayAvatarURL({ dynamic: true }))
   .setColor(`RANDOM`)
   .setTitle(`
   `)
@@ -19,16 +27,3 @@ message.channel.send('**The Ping-inator!**\nPinging...').then((msg) => {
  msg.delete();
 });
 }
-
-exports.help = {
-  name: "ping",
-  description: "untuk cek ping !",
-  usage: "as.ping",
-  example: "ping"
-};
-
-exports.conf = {
-  aliases: ["beep"],
-  cooldown: 5 // This number is a seconds, not a milliseconds.
-  // 1 = 1 seconds.
-};
