@@ -20,6 +20,7 @@ module.exports = {
         .setAuthor("Commands bot "+client.user.username, "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
         .setColor("BLUE")
         .setDescription(allcmds)
+        .setField("<a:SA_lMusic:780919131037892649> • Music Commands")
         .setImage("https://cdn.discordapp.com/attachments/822042698152280105/823022484630405190/aftershine.jpg")
         .setFooter(`Aftershine Entertainment ${client.config.prefix}help | Development By Jesand`)
 
