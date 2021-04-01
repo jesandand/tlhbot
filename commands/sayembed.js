@@ -25,4 +25,4 @@ run: async function (client, message, args) {
     message.channel.send(embed)
     message.channel.bulkDelete(1)
   }
-}
+}}
