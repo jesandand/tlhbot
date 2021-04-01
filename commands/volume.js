@@ -20,8 +20,8 @@ module.exports = {
     serverQueue.volume = args[0]; 
     serverQueue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
     let xd = new MessageEmbed()
-    .setDescription(`I set the volume to: **${args[0]/1}/100**`)
-    .setAuthor("Server Volume Manager", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
+    .setDescription(`Volume Menjadi : **${args[0]/1}/100**`)
+    .setAuthor("Volume Musik", "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
     .setColor("BLUE")
     return message.channel.send(xd);
   },
