@@ -20,6 +20,8 @@ module.exports = {
         .setAuthor("."+client.user.username, "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
         .setColor("BLUE")
         .setDescription(allcmds)
+        .setAuthor('', client.user.displayAvatarURL({ dynamic: true }))
+        .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
         .addField("\nCommands List After's Entertainment" , "```\ngunakan prefix as. untuk menjalankan commands```")
         .addField(" <a:9_Style_Discord:789405103303950366>  •  Informasi" , "```\nhelp, invite, afk```")
         .addField(" <a:as:827256384541687859>  •  Music Commands" , "```\nplay, pause, resume, \nvolume, nowplaying, stop, \nskip, skipto```")
