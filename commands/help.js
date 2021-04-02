@@ -20,12 +20,12 @@ module.exports = {
         .setAuthor("."+client.user.username, "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
         .setColor("BLUE")
         .setDescription(allcmds)
-        .addField("\nCommands List After's Entertainment\n")
+        .addField("\nCommands List After's Entertainment" , "```\ngunakan prefix as. untuk menjalankan commands```")
         .addField(" <a:9_Style_Discord:789405103303950366>  •  Informasi" , "```\nhelp, invite, afk```")
         .addField(" <a:as:827256384541687859>  •  Music Commands" , "```\nplay, pause, resume, \nvolume, nowplaying, stop, \nskip, skipto```")
         .addField(" <a:as:827256384541687859>  •  Music Commands 2" , "```\nloop, lyrics, playlist, \nqueue, search, shuffle, \nremove```")
         .setImage("https://cdn.discordapp.com/attachments/822042698152280105/823022484630405190/aftershine.jpg")
-        .setFooter(`Aftershine Entertainment ${client.config.prefix}help | Development By Jesand`)
+        .setFooter(`Aftershine Entertainment 2021 | Development By Jesand`)
 
         if(!args[0])return message.channel.send(embed)
         else {
