@@ -17,10 +17,10 @@ module.exports = {
         })
 
         let embed = new MessageEmbed()
-        .setAuthor(""+client.user.username, "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
+        .setAuthor("."+client.user.username, "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
         .setColor("BLUE")
         .setDescription(allcmds)
-        .addField("\nCommands List After's Entertainment :" , "\n")
+        .addField(" \n Commands List After's Entertainment\n")
         .addField(" <a:9_Style_Discord:789405103303950366>  •  Informasi" , "```\nhelp, invite, afk```")
         .addField(" <a:as:827256384541687859>  •  Music Commands" , "```\nplay, pause, resume, \nvolume, nowplaying, stop, \nskip, skipto```")
         .addField(" <a:as:827256384541687859>  •  Music Commands 2" , "```\nloop, lyrics, playlist, \nqueue, search, shuffle, \nremove \n```")
