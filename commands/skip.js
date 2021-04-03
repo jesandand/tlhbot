@@ -22,7 +22,7 @@ if(!serverQueue.connection.dispatcher)return
       let xd = new MessageEmbed()
       .setDescription("▶ Resumed the music for you!")
       .setColor("YELLOW")
-      .setTitle("Music has been Resumed!")
+      .setTitle("Music berhasil di resume!")
        
    return message.channel.send(xd).catch(err => console.log(err));
       
