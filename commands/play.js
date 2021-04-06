@@ -73,9 +73,9 @@ module.exports = {
     if (serverQueue) {
       serverQueue.songs.push(song);
       let thing = new MessageEmbed()
-      .setAuthor("Music Berhasil Ditambahkan ke Daftar Putar", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
+      .setAuthor("Music Berhasil Ditambahkan ke Daftar Putar", "https://cdn.discordapp.com/attachments/822042698152280105/823023536296820776/1-2.jpg")
       .setThumbnail(song.img)
-      .setColor("YELLOW")
+      .setColor("BLUE")
       .addField("Nama", song.title, true)
       .addField("Durasi", song.duration, true)
       .addField("Request dari", song.req.tag, true)
